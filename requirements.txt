@@ -1,0 +1,4 @@
+grpcio>=1.60
+grpcio-tools>=1.60
+matplotlib>=3.7
+reportlab>=4.0

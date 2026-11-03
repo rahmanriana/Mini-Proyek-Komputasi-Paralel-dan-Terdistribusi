@@ -1,0 +1,11 @@
+# Dua container terpisah: server dan client (demo "2 mesin").
+services:
+  server:
+    build: .
+    command: python server.py --port 50051
+    ports: ["50051:50051"]
+  client:
+    build: .
+    depends_on: [server]
+    # contoh: pesan kursi, lalu lihat denah
+    command: sh -c "sleep 2 && python client.py --target server:50051 pesan F1 C4 Andi && python client.py --target server:50051 lihat F1"

@@ -1,0 +1,37 @@
+# Python virtual environment
+venv/
+.env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / frontend junk
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Generated project artifacts
+hasil/
+laporan/*.docx
+laporan/*.pdf
+laporan/*.png
+laporan/*.jpg
+laporan/*.jpeg
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs / temp files
+*.log
+*.tmp
+*.bak
